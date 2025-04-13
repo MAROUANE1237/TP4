@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Mon CV</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="cv-container">
+       <img src="profil.png" alt="Image de profil" class="profile-image">
+       <h1> Mon curriculum vitae ( CV ) </h1>
+       <form method="POST">
+           <label for="name">Nom :</label>
+           <input class="large-input" type="text" placeholder="Nom" id="name" name="name" value="Khouya" readonly> <br>
+           
+           <label for="prenom">Prénom :</label>
+           <input class="large-input" type="text" placeholder="Prénom" id="prenom" name="prenom" value="Marouane" readonly> <br>
+           
+           <label for="contact">Email :</label>
+           <input class="large-input" type="text" placeholder="Email" id="contact" name="contact" value="marouanemarouane233@gmail.com" readonly> <br>
+           
+           <label for="diplomes">Numéro Téléphone  :</label>
+           <input class="large-input" type="text" placeholder="Les diplômes obtenus" id="diplomes" name="diplomes" value="+212682125501" readonly> <br>
+           
+           <label for="diplomes">Les diplômes obtenus :</label>
+           <input class="large-input" type="text" placeholder="Les diplômes obtenus" id="diplomes" name="diplomes" value="Bac-sm, DUG-Smi" readonly> <br>
+           
+           <label for="diplomes"> Compétences  :</label>
+           <input class="large-input" type="text" placeholder="Les diplômes obtenus" id="diplomes" name="diplomes" value="Algébre . Analyse Numérique. Css. Html .PHP. MySQL" readonly> <br>
+           
+           <label for="diplomes">Langues :</label>
+           <input class="large-input" type="text" placeholder="Les diplômes obtenus" id="diplomes" name="diplomes" value="francais . Arabe" readonly> <br>
+       </form>
+       
+       <label for="diplomes">Les travaux pratiques  :</label>
+       <input class="large-input" type="text" placeholder="Les diplômes obtenus" id="diplomes" name="diplomes" value="TP1. TP2 . TP3 . TP4 . " readonly> <br>
+       
+       <button class="button" onclick="toggleMode()">Changer le mode</button>
+   </div>
+
+   <script>
+       function toggleMode() {
+           document.body.classList.toggle('black-mode'); 
+       }
+   </script>
+</body>
+</html>
